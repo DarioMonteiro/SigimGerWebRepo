@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Painel";
+}
+<h3>Painel <font size="1">(versão @ViewContext.HttpContext.ApplicationInstance.GetType().BaseType.Assembly.GetName().Version.ToString() )</font></h3>
+<ul>
+@*    <li style="list-style-type:none">
+        <a href="@Url.Action("Index","Home",new { area = "Admin" })" class="">
+            <img src="@Url.Content("~/Content/img/ADMINISTRADOR.ico")" alt="Icon Image" />
+        </a> @Html.ActionLink("Administrador", "Index", "Home", new { area = "Admin" }, htmlAttributes: new { @class = "username", title = "Admin" })
+    </li>*@
+@*    <li style="list-style-type:none">
+        <a href="@Url.Action("Index","Home",new { area = "Comercial" })" class="">
+            <img src="@Url.Content("~/Content/img/COMERCIAL.ico")" alt="Icon Image" />
+        </a> @Html.ActionLink("Comercial", "Index", "Home", new { area = "Comercial" }, htmlAttributes: new { @class = "username", title = "Comercial" })
+    </li>*@
+@*    <li style="list-style-type:none">
+        <a href="@Url.Action("Index","Home",new { area = "Contrato" })" class="">
+            <img src="@Url.Content("~/Content/img/MODULO-CONTRATO.ico")" alt="Icon Image" />
+        </a> @Html.ActionLink("Contrato", "Index", "Home", new { area = "Contrato" }, htmlAttributes: new { @class = "username", title = "Contrato" })
+    </li>*@
+    <li style="list-style-type:none">
+        <a href="@Url.Action("Index","Home",new { area = "Gerencial" })" class="">
+            <img src="@Url.Content("~/Content/img/FINANCEIRO.ico")" alt="Icon Image" />
+        </a> @Html.ActionLink("Gerencial", "Index", "RelGerencial", new { area = "Gerencial" }, htmlAttributes: new { @class = "username", title = "Gerencial" })
+    </li>
+@*    <li style="list-style-type:none">
+        <a href="@Url.Action("Index","Home",new { area = "OrdemCompra" })" class="">
+            <img src="@Url.Content("~/Content/img/MODULO_ORDEM-DE-COMPRA.ico")" alt="Icon Image" />
+        </a> @Html.ActionLink("Ordem de Compra", "Index", "Home", new { area = "OrdemCompra" }, htmlAttributes: new { @class = "username", title = "Ordem de Compra" })
+    </li>*@
+@*    <li style="list-style-type:none">
+        <a href="@Url.Action("Index","Home",new { area = "Sac" })" class="">
+            <img src="@Url.Content("~/Content/img/MODULO-SAC_48x48.ico")" alt="Icon Image" />
+        </a> @Html.ActionLink("Sac", "Index", "Home", new { area = "Sac" }, htmlAttributes: new { @class = "username", title = "Sac" })
+    </li>*@
+
+
+</ul>

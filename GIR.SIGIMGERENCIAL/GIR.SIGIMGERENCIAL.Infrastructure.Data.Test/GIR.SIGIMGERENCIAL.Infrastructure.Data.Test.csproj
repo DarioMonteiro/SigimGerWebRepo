@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F99D38E5-76FB-4F03-B814-6670E38F2434}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GIR.SIGIMGERENCIAL.Infrastructure.Data.Test</RootNamespace>
+    <AssemblyName>GIR.SIGIMGERENCIAL.Infrastructure.Data.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GIR.SIGIMGERENCIAL.Application\GIR.SIGIMGERENCIAL.Application.csproj">
+      <Project>{8c6730fa-2c69-4843-b707-2070119b8dd8}</Project>
+      <Name>GIR.SIGIMGERENCIAL.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GIR.SIGIMGERENCIAL.Domain\GIR.SIGIMGERENCIAL.Domain.csproj">
+      <Project>{528f33b2-7aab-4090-ad84-635d1a1d502a}</Project>
+      <Name>GIR.SIGIMGERENCIAL.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GIR.SIGIMGERENCIAL.Infrastructure.Crosscutting.Adapter\GIR.SIGIMGERENCIAL.Infrastructure.Crosscutting.Adapter.csproj">
+      <Project>{1a80dd0b-ccd4-403e-8e56-2995b5f71b33}</Project>
+      <Name>GIR.SIGIMGERENCIAL.Infrastructure.Crosscutting.Adapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GIR.SIGIMGERENCIAL.Infrastructure.Crosscutting\GIR.SIGIMGERENCIAL.Infrastructure.Crosscutting.csproj">
+      <Project>{0546018c-d6fa-4ef8-bcbe-309a14e294b6}</Project>
+      <Name>GIR.SIGIMGERENCIAL.Infrastructure.Crosscutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GIR.SIGIMGERENCIAL.Infrastructure.Data\GIR.SIGIMGERENCIAL.Infrastructure.Data.csproj">
+      <Project>{1a7d200c-1c66-4cca-8bec-3926b21b35df}</Project>
+      <Name>GIR.SIGIMGERENCIAL.Infrastructure.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,13 @@
+﻿@using GIR.SIGIMGERENCIAL.Presentation.WebUI.Helpers
+
+<div class="row">
+    <article class="col-sm-12">
+        @Html.Raw(Html.CustomNotificationSummary(Session["MessageQueue"] as GIR.SIGIMGERENCIAL.Infrastructure.Crosscutting.Notification.MessageQueue))
+        @Html.Raw(Html.CustomValidationSummary(false))
+    </article>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+    });
+</script>

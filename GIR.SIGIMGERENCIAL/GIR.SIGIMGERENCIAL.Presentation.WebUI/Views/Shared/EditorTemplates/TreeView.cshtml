@@ -1,0 +1,13 @@
+﻿@model IEnumerable<GIR.SIGIMGERENCIAL.Application.DTO.Comum.TreeNodeDTO>
+
+<ul>
+    <li class="rootNode">
+        <span><i class="fa fa-lg fa-minus-circle"></i> @ViewBag.FirstNode</span>
+        <ul>
+            @foreach (var item in Model)
+            {
+                @Html.Partial("~/Views/Shared/EditorTemplates/TreeNode.cshtml", item)
+            }
+        </ul>
+    </li>
+</ul>

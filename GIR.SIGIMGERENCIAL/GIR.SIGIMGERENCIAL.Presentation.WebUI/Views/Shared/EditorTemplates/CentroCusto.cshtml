@@ -1,0 +1,146 @@
+﻿@model GIR.SIGIMGERENCIAL.Application.DTO.Gerencial.CentroCustoDTO
+
+<section class="@ViewBag.sectionClass">
+    @{
+        string labelText = !string.IsNullOrEmpty(ViewBag.labelText) ? ViewBag.labelText : Html.DisplayNameFor(m => m.Codigo).ToString();
+    }
+    @Html.LabelFor(m => m.Codigo, labelText, new { @class = "label" })
+    <div class="input-group">
+        <label class="input">
+            @{
+                string cssClass = (ViewBag.required as bool? ?? false) ? "required" : string.Empty;
+            }
+            @Html.TextBoxFor(m => m.Codigo, new { @class = cssClass })
+        </label>
+        <a id="BtnShowModalPanel_@Html.IdFor(m => m.Codigo)" data-toggle="modal" href="#@Html.IdFor(m => m.Codigo)_ModalPanel" class="button-icon input-group-addon"><i class="fa fa-lg fa-sitemap"></i></a>
+    </div>
+    @Html.ValidationMessageFor(m => m.Codigo, "", new { @id = Html.IdFor(m => m.Codigo) + "_ValidationMessage", @class = "note note-error" })
+</section>
+<section class="@ViewBag.sectionClass">
+    <label class="label" for="fname">&nbsp;</label>
+    <label class="input">
+        @Html.TextBoxFor(m => m.Descricao, new { @readonly = "", @class = "readonly" })
+    </label>
+</section>
+
+<div class="modal fade" id="@Html.IdFor(m => m.Codigo)_ModalPanel" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">Centro de Custo
+                </h4>
+            </div>
+            <fieldset style="border-bottom:solid 1px #CCCCCC; padding:14px;">
+                <div class="row">
+                    <section class="col col-12" style="margin-bottom:0;">
+                        <label class="input">
+                            <input id="filtro@(Html.IdFor(m => m.Descricao))" name="filtro@(Html.IdFor(m => m.Descricao))" type="text" placeholder="Digite aqui a descrição">
+                        </label>
+                    </section>
+                </div>
+            </fieldset>
+            <div id="@Html.IdFor(m => m.Codigo)_ModalBody" class="modal-body no-padding sigimModalBody">
+                <div id="@Html.IdFor(m => m.Codigo)_tree" class="tree smart-form">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    @{
+        bool? somenteNivelFolha = ViewBag.somenteNivelFolha as bool? ?? false;
+        bool? podeEditar = ViewBag.podeEditar as bool? ?? true;
+    }
+    $(document).ready(function () {
+        $(document).on("change", "#@Html.IdFor(m => m.Codigo)", function () {
+            validaCentroCusto();
+        });
+
+        var timeout = '';
+        $(document).on('input', '#filtro@(Html.IdFor(m => m.Descricao))', function () {
+            clearTimeout(timeout);
+            var descricao = $(this).val();
+            timeout = setTimeout(function () {
+                resetTreeView($('#@Html.IdFor(m => m.Codigo)_tree.tree'));
+                highlightNodes($('#@Html.IdFor(m => m.Codigo)_tree.tree'), descricao);
+            }, 250);
+        });
+
+        $(document).on("show.bs.modal", "#@Html.IdFor(m => m.Codigo)_ModalPanel", function () {
+            $('#filtro@(Html.IdFor(m => m.Descricao))').val('');
+            $('#@Html.IdFor(m => m.Codigo)_tree').html('');
+
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("TreeView", "CentroCusto", new { area = "Gerencial" })',
+                cache: false
+            })
+            .success(function (result) {
+                $('#@Html.IdFor(m => m.Codigo)_tree').html(result);
+
+                $('#@Html.IdFor(m => m.Codigo)_tree.tree > ul').attr('role', 'tree').find('ul').attr('role', 'group');
+
+                $('#@Html.IdFor(m => m.Codigo)_tree.tree').find('li:has(ul)').addClass('parent_li').attr('role', 'treeitem').find(' > span').on('click', function (e) {
+                    var children = $(this).parent('li.parent_li').find(' > ul > li');
+                    if (children.is(':visible')) {
+                        children.hide('fast');
+                        $(this).find(' > i').addClass("fa-plus-circle").removeClass("fa-minus-circle");
+                    } else {
+                        children.show('fast');
+                        $(this).find(' > i').addClass("fa-minus-circle").removeClass("fa-plus-circle");
+                    }
+                    e.stopPropagation();
+                });
+
+                $('#@Html.IdFor(m => m.Codigo)_tree.tree').find('li').not(':has(ul)').find(' > span').css({ cursor: 'pointer' }).on('click', function (e) {
+                    $('#@Html.IdFor(m => m.Codigo)').val($(this).data("codigo-centro-custo")).change();
+                    $('#@Html.IdFor(m => m.Codigo)_ModalPanel').modal('hide');
+                });
+
+                @if (!somenteNivelFolha.Value) {
+                    @:$('#@Html.IdFor(m => m.Codigo)_tree.tree').find('li:has(ul)').find(' > span').css({ cursor: 'pointer' }).on('dblclick', function (e) {
+                    @:  $('#@Html.IdFor(m => m.Codigo)').val($(this).data("codigo-centro-custo")).change();
+                    @:  $('#@Html.IdFor(m => m.Codigo)_ModalPanel').modal('hide');
+                    @:});
+                }
+
+                highlightNode($('#@Html.IdFor(m => m.Codigo)_tree.tree'), $('#@Html.IdFor(m => m.Codigo)').val());
+            });
+        });
+
+        @if (!podeEditar.Value)
+        {
+            @:$("#@Html.IdFor(m => m.Codigo)").attr("readonly", true);
+            @:$("#@Html.IdFor(m => m.Codigo)").addClass("readonly");
+            @:$("#BtnShowModalPanel_@Html.IdFor(m => m.Codigo)").attr('href', 'javascript:void(0);');
+            @:$("#BtnShowModalPanel_@Html.IdFor(m => m.Codigo)").removeAttr('data-toggle');
+        }
+    });
+
+    function validaCentroCusto() {
+        var isValid = false;
+        var codigoCentroCusto = $("#@Html.IdFor(m => m.Codigo)").val();
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("ValidaCentroCustoPorUsuario", "CentroCusto", new { area = "Gerencial" })',
+            cache: false,
+            async: false,
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify({
+                codigo: codigoCentroCusto
+            })
+        })
+        .success(function (result) {
+            showErrorMessage(getErrorMessageContainer('@Html.NameFor(m => m.Codigo)'), result.errorMessage);
+            $('#@Html.IdFor(m => m.Descricao)').val(result.descricao);
+            isValid = result.ehValido;
+        });
+
+        return isValid;
+    }
+
+</script>

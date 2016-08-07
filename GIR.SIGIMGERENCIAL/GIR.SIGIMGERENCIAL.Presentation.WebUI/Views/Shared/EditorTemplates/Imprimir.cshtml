@@ -1,0 +1,68 @@
+﻿@using GIR.SIGIMGERENCIAL.Application.Adapter;
+@using GIR.SIGIMGERENCIAL.Application.DTO.Comum;
+@model bool
+@{
+    string disableBtnImprimir = string.Empty;
+    if (!Model)
+    {
+        disableBtnImprimir = "disabled";
+    }
+}
+<a data-toggle="modal" href="#FormatoImpressao_ModalPanel" id="btnImprimir" class="btn btn-primary @disableBtnImprimir">Imprimir</a>
+@if (Model) {
+    <div class="modal fade" id="FormatoImpressao_ModalPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">
+                        Formato do Arquivo para Impressão
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col col-12">
+                            @{
+                                var listaFormatoExportacaoArquivo = new SelectList(typeof(FormatoExportacaoArquivo).ToItemListaDTO(), "Id", "Descricao", (int)FormatoExportacaoArquivo.PDF);
+                                foreach (var item in listaFormatoExportacaoArquivo)
+	                            {
+                                    var itemChecked = string.Empty;
+                                    if (item.Selected)
+                                    {
+                                        itemChecked = "checked=\"checked\"";
+                                    }
+                                    @:<label class="radio">
+							        @:  <input type="radio" name="formatoExportacaoArquivo" value="@item.Value" @itemChecked>
+							        @:  <i></i>@item.Text
+                                    @:</label>
+	                            }
+                            }
+					    </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+					<button type="button" id="btnConfirmarImpressao" class="btn btn-primary" data-dismiss="modal">
+						Ok
+					</button>
+				</div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var parametrosUrlImpressao = '';
+            $(document).ready(function () {
+                $(document).on("show.bs.modal", "#FormatoImpressao_ModalPanel", function (e) {
+                    $.event.trigger({
+                        type: "showFormatoImpressaoModalPanel",
+                        event: e
+                    });
+                });
+
+                $("#btnConfirmarImpressao").on("click", function () {
+                    window.open('@ViewBag.url?formato=' + $("input:radio[name=formatoExportacaoArquivo]:checked").val() + parametrosUrlImpressao);
+                });
+            });
+        </script>
+    </div>
+}

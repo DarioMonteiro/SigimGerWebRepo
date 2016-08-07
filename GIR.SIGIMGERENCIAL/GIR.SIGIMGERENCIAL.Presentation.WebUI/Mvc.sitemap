@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
+
+  <mvcSiteMapNode title="Painel" controller="Painel" action="Index">
+
+    <mvcSiteMapNode title="Admin" controller="Home" action="Index" area="Admin">
+      <mvcSiteMapNode title="Acessos" url="#" clickable="false" roles="PERFIL_ACESSAR,USUARIOFUNCIONALIDADE_ACESSAR">
+        <mvcSiteMapNode title="Perfil" controller="Perfil" action="Index">
+          <mvcSiteMapNode title="Cadastro" controller="Perfil" action="Cadastro" visibility="SiteMapPathHelper,!*" preservedRouteParameters="id"/>
+        </mvcSiteMapNode>
+        <mvcSiteMapNode title="Usuário funcionalidades" controller="UsuarioFuncionalidade" action="Index">
+          <mvcSiteMapNode title="Cadastro" controller="UsuarioFuncionalidade" action="Cadastro" visibility="SiteMapPathHelper,!*"/>
+        </mvcSiteMapNode>
+      </mvcSiteMapNode>
+    </mvcSiteMapNode>
+
+    <mvcSiteMapNode title="Gerencial" controller="Home" action="Index" area="Gerencial">
+      <mvcSiteMapNode title="Relatórios" url="#" clickable="false" roles="REL_GERENCIAL_ACESSAR">
+        <mvcSiteMapNode title="Gerencial" controller="RelGerencial" action="Index"/>
+      </mvcSiteMapNode>
+    </mvcSiteMapNode>
+  </mvcSiteMapNode>
+</mvcSiteMap>

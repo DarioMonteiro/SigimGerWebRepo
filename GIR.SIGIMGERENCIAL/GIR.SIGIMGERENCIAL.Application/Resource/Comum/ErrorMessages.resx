@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BancoCarteira" xml:space="preserve">
+    <value>Banco usado para carteira !</value>
+  </data>
+  <data name="BloqueioContabilEncontrado" xml:space="preserve">
+    <value>Operações anteriores a data de {0} não poderão ser realizadas, pois foi cadastrado um bloqueio contábil para o centro de custo {1}.</value>
+  </data>
+  <data name="CampoInvalido" xml:space="preserve">
+    <value>O campo {0}  não é válido.</value>
+  </data>
+  <data name="CampoObrigatorio" xml:space="preserve">
+    <value>O campo {0} é obrigatório.</value>
+  </data>
+  <data name="ChaveAcessoNaoInformada" xml:space="preserve">
+    <value>Chave de acesso não informada. Entre em contato com a GIR !</value>
+  </data>
+  <data name="ClasseInsumoNaoCadastrada" xml:space="preserve">
+    <value>Classe insumo não cadastrada.</value>
+  </data>
+  <data name="ClasseUltimoNivel" xml:space="preserve">
+    <value>Selecione uma classe insumo do último nível.</value>
+  </data>
+  <data name="DataExpiracaoNaoInformada" xml:space="preserve">
+    <value>Data de expiração não foi informada ou está inválida. Entre em contato com a GIR !</value>
+  </data>
+  <data name="DataExpirada" xml:space="preserve">
+    <value>Período de utilização do sistema expirou. Entre em contato com a GIR !</value>
+  </data>
+  <data name="DataMaiorQue" xml:space="preserve">
+    <value>A data do campo "{0}" está maior que a data do campo "{1}".</value>
+  </data>
+  <data name="DataMaximaMenorQueMinima" xml:space="preserve">
+    <value>A data máxima não pode ser menor que a data mínima.</value>
+  </data>
+  <data name="DataMinimaMaiorQueMaxima" xml:space="preserve">
+    <value>A data mínima não pode ser maior que a data máxima.</value>
+  </data>
+  <data name="EmailInvalido" xml:space="preserve">
+    <value>Por favor insira um endereço de email válido.</value>
+  </data>
+  <data name="ErroAcessoLogGirCliente" xml:space="preserve">
+    <value>Acesso negado. Entre em contato com a GIR !</value>
+  </data>
+  <data name="ExclusaoErro" xml:space="preserve">
+    <value>Erro ao efetuar a exclusão !</value>
+  </data>
+  <data name="FormatoImagemInvalido" xml:space="preserve">
+    <value>A imagem deve ter um dos seguintes formatos: BMP, JPG, GIF ou PNG.</value>
+  </data>
+  <data name="GravacaoErro" xml:space="preserve">
+    <value>Erro ao efetuar a gravação !</value>
+  </data>
+  <data name="InformacaoNaoEncontrada" xml:space="preserve">
+    <value>Informações não encontradas !</value>
+  </data>
+  <data name="InformeDataValida" xml:space="preserve">
+    <value>Informe uma data válida.</value>
+  </data>
+  <data name="LimiteMaximoCaracteresExcedido" xml:space="preserve">
+    <value>Limite máximo de {1} caracteres excedido.</value>
+  </data>
+  <data name="LimiteMinimoCaracteresNaoAtingido" xml:space="preserve">
+    <value>Preencha o campo com no mínimo {1} caracteres.</value>
+  </data>
+  <data name="ModuloNaoPermitido" xml:space="preserve">
+    <value>Esse módulo não faz parte do seu pacote.</value>
+  </data>
+  <data name="NaoExistemRegistros" xml:space="preserve">
+    <value>Não existem registros.</value>
+  </data>
+  <data name="NenhumRegistroEncontrado" xml:space="preserve">
+    <value>Nenhum registro encontrado.</value>
+  </data>
+  <data name="PrivilegiosInsuficientes" xml:space="preserve">
+    <value>Privilégios insuficientes para executar esta operação.</value>
+  </data>
+  <data name="RegistroEmUso" xml:space="preserve">
+    <value>O registro [{0}] está sendo usado.</value>
+  </data>
+  <data name="RegistroNaoRecuperado" xml:space="preserve">
+    <value>Selecione o registro.</value>
+  </data>
+  <data name="RegistroProtegido" xml:space="preserve">
+    <value>O registro [{0}] está protegido.</value>
+  </data>
+  <data name="SistemaBloqueado" xml:space="preserve">
+    <value>A conversão da cadeia de caracteres no tipo 'Date' não é válida.</value>
+  </data>
+  <data name="TamanhoArquivoSuperior1MB" xml:space="preserve">
+    <value>Escolha um arquivo com o tamanho menor ou igual a 1 MB.</value>
+  </data>
+  <data name="ValorDeveSerMaiorQue" xml:space="preserve">
+    <value>Preencha o campo [{0}] com um valor maior que [{1}].</value>
+  </data>
+  <data name="ValorDeveSerMenorQue" xml:space="preserve">
+    <value>Preencha o campo [{0}] com um valor menor que [{1}].</value>
+  </data>
+  <data name="ValorDeveSerNumerico" xml:space="preserve">
+    <value>Preencha o campo {0} com um valor numérico.</value>
+  </data>
+  <data name="ValorDeveSerNumericoEOuEspaco" xml:space="preserve">
+    <value>Preencha o campo {0} com um valor numérico e ou espaço.</value>
+  </data>
+  <data name="ValorMaiorQue" xml:space="preserve">
+    <value>O valor do campo "{0}" está maior que o valor do campo "{1}".</value>
+  </data>
+  <data name="VersaoInvalida" xml:space="preserve">
+    <value>Versão inválida !</value>
+  </data>
+</root>
