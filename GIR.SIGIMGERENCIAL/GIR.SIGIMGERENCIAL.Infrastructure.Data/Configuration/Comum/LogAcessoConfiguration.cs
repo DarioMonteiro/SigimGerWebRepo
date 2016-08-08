@@ -13,7 +13,7 @@ namespace GIR.SIGIMGERENCIAL.Infrastructure.Data.Configuration.Comum
     {
         public LogAcessoConfiguration()
         {
-            ToTable("LogAcesso", "SIGIMGERENCIAL");
+            ToTable("LogAcesso", "Comum");
 
             Property(l => l.Id)
                 .HasColumnName("codigo")

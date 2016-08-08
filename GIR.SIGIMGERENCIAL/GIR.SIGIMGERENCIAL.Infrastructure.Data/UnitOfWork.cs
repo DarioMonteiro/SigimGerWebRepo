@@ -11,6 +11,7 @@ using GIR.SIGIMGERENCIAL.Domain.Entity.Admin;
 using GIR.SIGIMGERENCIAL.Infrastructure.Data;
 using GIR.SIGIMGERENCIAL.Infrastructure.Data.Configuration.Admin;
 using GIR.SIGIMGERENCIAL.Infrastructure.Data.Configuration.Comum;
+using GIR.SIGIMGERENCIAL.Infrastructure.Data.Configuration.Gerencial;
 
 namespace GIR.SIGIMGERENCIAL.Infrastructure.Data
 {
@@ -109,6 +110,11 @@ namespace GIR.SIGIMGERENCIAL.Infrastructure.Data
 
             #endregion
 
+            #region Gerencial
+
+            modelBuilder.Configurations.Add(new CentroCustoConfiguration());
+
+            #endregion
 
         }
 

@@ -72,6 +72,12 @@
     <Compile Include="Configuration\Admin\UsuarioPerfilConfiguration.cs" />
     <Compile Include="Configuration\Comum\LogAcessoConfiguration.cs" />
     <Compile Include="Configuration\Comum\LogOperacaoConfiguration.cs" />
+    <Compile Include="Configuration\Gerencial\AnaliseInadimplenciaConfiguration.cs" />
+    <Compile Include="Configuration\Gerencial\CentroCustoConfiguration.cs" />
+    <Compile Include="Configuration\Gerencial\ComercialConfiguration.cs" />
+    <Compile Include="Configuration\Gerencial\ReceitaConfiguration.cs" />
+    <Compile Include="Configuration\Gerencial\AnaliseRecebiveisConfiguration.cs" />
+    <Compile Include="Configuration\Gerencial\ValorPotencialConfiguration.cs" />
     <Compile Include="IoC\AdminBootstrapper.cs" />
     <Compile Include="IoC\Bootstrapper.cs" />
     <Compile Include="IoC\ComumBootstrapper.cs" />

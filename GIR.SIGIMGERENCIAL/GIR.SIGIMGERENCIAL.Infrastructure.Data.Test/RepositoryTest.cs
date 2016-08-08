@@ -215,7 +215,7 @@ namespace GIR.SIGIMGERENCIAL.Infrastructure.Data.Test
                 Data = DateTime.Now,
                 HostName = "TRINCAFERRO",
                 LoginUsuario = "SIGIM",
-                NomeBaseDados = "SIGIMGERENCIAL",
+                NomeBaseDados = "SigimGerencial",
                 Servidor = "",
                 Sistema = "SIGIMGERENCIALWEB",
                 Tipo = "",
