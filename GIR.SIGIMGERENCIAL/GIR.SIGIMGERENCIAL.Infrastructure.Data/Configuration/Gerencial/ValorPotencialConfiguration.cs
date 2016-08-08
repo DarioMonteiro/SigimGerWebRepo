@@ -37,27 +37,27 @@ namespace GIR.SIGIMGERENCIAL.Infrastructure.Data.Configuration.Gerencial
             Property(l => l.VgvEstoquePercentual)
                 .HasColumnName("vgvEstoquePercentual")
                 .HasPrecision(18, 5)
-                .HasColumnOrder(3);
+                .HasColumnOrder(4);
 
             Property(l => l.RecebivelVplMoeda)
                 .HasColumnName("recebivelVplMoeda")
                 .HasPrecision(18, 2)
-                .HasColumnOrder(4);
+                .HasColumnOrder(5);
 
             Property(l => l.RecebivelVplPercentual)
                 .HasColumnName("recebivelVplPercentual")
                 .HasPrecision(18, 5)
-                .HasColumnOrder(5);
+                .HasColumnOrder(6);
 
             Property(l => l.TotalMoeda)
                 .HasColumnName("totalMoeda")
                 .HasPrecision(18, 2)
-                .HasColumnOrder(6);
+                .HasColumnOrder(7);
 
             Property(l => l.TotalPercentual)
                 .HasColumnName("totalPercentual")
                 .HasPrecision(18, 5)
-                .HasColumnOrder(7);
+                .HasColumnOrder(8);
         }
 
     }

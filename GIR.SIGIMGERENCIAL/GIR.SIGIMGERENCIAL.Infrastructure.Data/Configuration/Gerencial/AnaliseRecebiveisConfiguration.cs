@@ -41,21 +41,21 @@ namespace GIR.SIGIMGERENCIAL.Infrastructure.Data.Configuration.Gerencial
             Property(l => l.EmAtrasoMoeda)
                 .HasColumnName("emAtrasoMoeda")
                 .HasPrecision(18, 2)
-                .HasColumnOrder(4);
+                .HasColumnOrder(5);
 
             Property(l => l.ContratosEmAtrasoQtd)
                 .HasColumnName("contratosEmAtrasoQtd")
-                .HasColumnOrder(5);
+                .HasColumnOrder(6);
 
             Property(l => l.AtrasadosEncargo)
                 .HasColumnName("atrasadosEncargo")
                 .HasPrecision(18, 2)
-                .HasColumnOrder(6);
+                .HasColumnOrder(7);
 
             Property(l => l.TaxaInadimplencia)
                 .HasColumnName("taxaInadimplencia")
                 .HasPrecision(18, 5)
-                .HasColumnOrder(7);
+                .HasColumnOrder(8);
         }
     }
 }

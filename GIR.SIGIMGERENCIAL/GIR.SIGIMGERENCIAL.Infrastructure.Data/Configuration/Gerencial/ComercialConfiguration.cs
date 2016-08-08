@@ -14,7 +14,7 @@ namespace GIR.SIGIMGERENCIAL.Infrastructure.Data.Configuration.Gerencial
     {
         public ComercialConfiguration()
         {
-            ToTable("ValorPotencial", "Comercial");
+            ToTable("Comercial", "Gerencial");
 
             Property(l => l.Id)
                 .HasColumnName("codigo")

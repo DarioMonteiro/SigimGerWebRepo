@@ -112,7 +112,12 @@ namespace GIR.SIGIMGERENCIAL.Infrastructure.Data
 
             #region Gerencial
 
+            modelBuilder.Configurations.Add(new AnaliseInadimplenciaConfiguration());
+            modelBuilder.Configurations.Add(new AnaliseRecebiveisConfiguration());
             modelBuilder.Configurations.Add(new CentroCustoConfiguration());
+            modelBuilder.Configurations.Add(new ComercialConfiguration());
+            modelBuilder.Configurations.Add(new ReceitaConfiguration());
+            modelBuilder.Configurations.Add(new ValorPotencialConfiguration());
 
             #endregion
 
