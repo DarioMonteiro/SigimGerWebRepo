@@ -116,8 +116,11 @@ namespace GIR.SIGIMGERENCIAL.Infrastructure.Data
             modelBuilder.Configurations.Add(new AnaliseRecebiveisConfiguration());
             modelBuilder.Configurations.Add(new CentroCustoConfiguration());
             modelBuilder.Configurations.Add(new ComercialConfiguration());
+            modelBuilder.Configurations.Add(new DespesaConfiguration());
+            modelBuilder.Configurations.Add(new FluxoFinanceiroConfiguration());
             modelBuilder.Configurations.Add(new ReceitaConfiguration());
             modelBuilder.Configurations.Add(new ValorPotencialConfiguration());
+            modelBuilder.Configurations.Add(new ValorPotencialLiquidoConfiguration());
 
             #endregion
 

@@ -53,8 +53,11 @@
     <Compile Include="Entity\Gerencial\AnaliseRecebiveis.cs" />
     <Compile Include="Entity\Gerencial\CentroCusto.cs" />
     <Compile Include="Entity\Gerencial\Comercial.cs" />
+    <Compile Include="Entity\Gerencial\Despesa.cs" />
+    <Compile Include="Entity\Gerencial\FluxoFinanceiro.cs" />
     <Compile Include="Entity\Gerencial\Receita.cs" />
     <Compile Include="Entity\Gerencial\ValorPotencial.cs" />
+    <Compile Include="Entity\Gerencial\ValorPotencialLiquido.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Admin\IModuloRepository.cs" />
