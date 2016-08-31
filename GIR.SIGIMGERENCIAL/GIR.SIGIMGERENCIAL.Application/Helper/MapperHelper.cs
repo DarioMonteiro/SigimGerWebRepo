@@ -12,6 +12,7 @@ namespace GIR.SIGIMGERENCIAL.Application.Helper
         {
             AdminMapperHelper.Initialise();
             ComumMapperHelper.Initialise();
+            GerencialMapperHelper.Initialise();
         }
     }
 }

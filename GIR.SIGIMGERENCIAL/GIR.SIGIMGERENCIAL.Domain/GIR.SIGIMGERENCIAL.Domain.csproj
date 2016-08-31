@@ -67,6 +67,8 @@
     <Compile Include="Repository\Admin\IUsuarioRepository.cs" />
     <Compile Include="Repository\Comum\ILogAcessoRepository.cs" />
     <Compile Include="Repository\Comum\ILogOperacaoRepository.cs" />
+    <Compile Include="Repository\Comum\ICentroCustoRepository.cs" />
+    <Compile Include="Repository\Gerencial\IValorPotencialRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Resource\Comum\ErrorMessages.Designer.cs" />
     <Compile Include="Specification\Admin\PerfilSpecification.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="Specification\DirectSpecification.cs" />
     <Compile Include="Specification\ExpressionBuilder.cs" />
     <Compile Include="Specification\FalseSpecification.cs" />
+    <Compile Include="Specification\Gerencial\ValorPotencialSpecification.cs" />
     <Compile Include="Specification\ISpecification.cs" />
     <Compile Include="Specification\NotSpecification.cs" />
     <Compile Include="Specification\OrSpecification.cs" />

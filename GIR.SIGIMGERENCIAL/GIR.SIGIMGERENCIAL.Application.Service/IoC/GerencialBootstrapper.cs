@@ -14,6 +14,7 @@ namespace GIR.SIGIMGERENCIAL.Application.Service.IoC
         public static void Initialise()
         {
             Container.Current.RegisterType<ICentroCustoAppService, CentroCustoAppService>();
+            Container.Current.RegisterType<IValorPotencialAppService, ValorPotencialAppService>();
         }
     }
 }

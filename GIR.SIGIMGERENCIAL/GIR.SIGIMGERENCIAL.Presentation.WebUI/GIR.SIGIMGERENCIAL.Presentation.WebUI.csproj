@@ -752,6 +752,7 @@
     <Content Include="Areas\Gerencial\Views\Shared\_MenuPartial.cshtml" />
     <Content Include="Areas\Gerencial\Views\Web.config" />
     <Content Include="Areas\Gerencial\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Gerencial\Views\RelGerencial\Index3.cshtml" />
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>

@@ -79,6 +79,7 @@
     <Compile Include="Admin\UsuarioAppService.cs" />
     <Compile Include="BaseAppService.cs" />
     <Compile Include="Gerencial\CentroCustoAppService.cs" />
+    <Compile Include="Gerencial\ValorPotencialAppService.cs" />
     <Compile Include="IoC\AdminBootstrapper.cs" />
     <Compile Include="IoC\Bootstrapper.cs" />
     <Compile Include="IoC\GerencialBootstrapper.cs" />

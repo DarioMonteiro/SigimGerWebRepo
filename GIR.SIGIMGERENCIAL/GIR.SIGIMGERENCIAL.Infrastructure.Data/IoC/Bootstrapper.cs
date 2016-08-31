@@ -16,6 +16,7 @@ namespace GIR.SIGIMGERENCIAL.Infrastructure.Data.IoC
 
             AdminBootstrapper.Initialise();
             ComumBootstrapper.Initialise();
+            GerencialBootstrapper.Initialise();
         }
     }
 }

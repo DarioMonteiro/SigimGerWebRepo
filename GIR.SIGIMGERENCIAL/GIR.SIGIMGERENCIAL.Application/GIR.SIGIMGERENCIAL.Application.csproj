@@ -65,12 +65,14 @@
     <Compile Include="DTO\Comum\ItemListaDTO.cs" />
     <Compile Include="DTO\Comum\TreeNodeDTO.cs" />
     <Compile Include="DTO\Gerencial\CentroCustoDTO.cs" />
+    <Compile Include="DTO\Gerencial\ValorPotencialDTO.cs" />
     <Compile Include="Filtros\Admin\PerfilFiltro.cs" />
     <Compile Include="Filtros\Admin\UsuarioFuncionalidadeFiltro.cs" />
     <Compile Include="Filtros\BaseFiltro.cs" />
     <Compile Include="Filtros\PaginationParameters.cs" />
     <Compile Include="Helper\AdminMapperHelper.cs" />
     <Compile Include="Helper\ComumMapperHelper.cs" />
+    <Compile Include="Helper\GerencialMapperHelper.cs" />
     <Compile Include="Helper\MapperHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource\Admin\ErrorMessages.Designer.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Resource\Comum\SuccessMessages.Designer.cs" />
     <Compile Include="Service\Admin\IUsuarioAppService.cs" />
     <Compile Include="Service\Gerencial\ICentroCustoAppService.cs" />
+    <Compile Include="Service\Gerencial\IValorPotencialAppService.cs" />
     <Compile Include="Service\IBaseAppService.cs" />
   </ItemGroup>
   <ItemGroup>
