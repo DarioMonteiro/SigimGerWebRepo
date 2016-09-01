@@ -12,7 +12,7 @@ namespace GIR.SIGIMGERENCIAL.Infrastructure.Data.Configuration.Admin
     {
         public ModuloConfiguration()
         {
-            ToTable("Sistema", "SIGIMGERENCIAL");
+            ToTable("Sistema", "Comum");
 
             Property(l => l.Id)
                 .HasColumnName("codigo")

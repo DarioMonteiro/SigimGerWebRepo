@@ -21,6 +21,8 @@ namespace GIR.SIGIMGERENCIAL.Infrastructure.Data
         public UnitOfWork()
             : base("DefaultConnection")
         {
+            Database.SetInitializer<UnitOfWork>(null);
+
             //Database.SetInitializer<UnitOfWork>(new DropCreateDatabaseIfModelChanges<UnitOfWork>());
             //Database.SetInitializer(new DropCreateDatabaseAlways<UnitOfWork>());
         }

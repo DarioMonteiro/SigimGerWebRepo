@@ -753,6 +753,7 @@
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\PublishProfiles\SIGIMGERENCIAL_PUBLISH.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GIR.SIGIMGERENCIAL.Application.Service\GIR.SIGIMGERENCIAL.Application.Service.csproj">

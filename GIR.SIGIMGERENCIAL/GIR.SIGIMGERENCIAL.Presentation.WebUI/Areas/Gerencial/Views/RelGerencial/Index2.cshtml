@@ -58,8 +58,6 @@
                                 </div>
                             </div>*@
 
-
-
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
@@ -94,6 +92,91 @@
                                     </div>
                                 </div>
                             </div>
+
+
+                            @***********************@
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseVpLiquido" class="collapsed">
+                                            <i class="fa fa-lg fa-angle-down pull-right"></i>
+                                            <i class="fa fa-lg fa-angle-up pull-right"></i>
+                                            VALOR POTENCIAL LÍQUIDO
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseVpLiquido" class="panel-collapse collapse" style="height: 0px;">
+                                    <div class="panel-body no-padding">
+					                    <div class="table-container">
+						                    <div class="table-responsive" style="min-height: 115px; border: 1px solid #ddd; margin-bottom: 13px; overflow-x: auto;">
+							                    <table  class="table table-bordered table-striped table-condensed table-hover dataTable">
+								                    <thead>
+									                    <tr>
+                                                            <th>Centro de Custo</th>
+										                    <th>VGV - Estoque (R$)</th>
+                                                            <th>Impostos (R$) - 6,80%</th>
+										                    <th>Corretagem (R$) - 5,00%</th>
+                                                            <th>Publicidade (R$) - 10,00%</th>
+                                                            <th>Investimento (R$) - 7,00%</th>
+                                                            <th>VGV Estoque Líquido (R$)</th>
+                                                            <th>Recebíveis em VPL (R$)</th>
+                                                            <th>Impostos (R$) - 6,80%</th>
+                                                            <th>Recebíveis Líquido (R$)</th>
+                                                            <th>Valor Total (R$)</th>
+									                    </tr>
+								                    </thead>
+								                    <tbody>
+									                    <tr>
+                                                            <td class="text-left text-nowrap"><a href="javascript:void(0)">2.01 - VILA MAR</a></td>
+										                    <td class="text-right text-nowrap">8.453.120,00</td>
+                                                            <td class="text-right text-nowrap">1.014.374,40</td>
+										                    <td class="text-right text-nowrap">253.593,60</td>
+                                                            <td class="text-right text-nowrap">1.690.624,00</td>
+                                                            <td class="text-right text-nowrap">1.267.968,00</td>
+                                                            <td class="text-right text-nowrap">4.226.560,00</td>
+                                                            <td class="text-right text-nowrap">3.500.340,00</td>
+                                                            <td class="text-right text-nowrap">1.014.374,40</td>
+                                                            <td class="text-right text-nowrap">2.485.965,60</td>
+                                                            <td class="text-right text-nowrap">6.712.525,60</td>
+									                    </tr>
+									                    <tr>
+                                                            <td class="text-left text-nowrap"><a href="javascript:void(0)">2.02 - BARRATIBA</a></td>
+										                    <td class="text-right text-nowrap">6.553.000,00</td>
+                                                            <td class="text-right text-nowrap">786.360,00</td>
+										                    <td class="text-right text-nowrap">196.590,00</td>
+                                                            <td class="text-right text-nowrap">1.310.600,00</td>
+                                                            <td class="text-right text-nowrap">982.950,00</td>
+                                                            <td class="text-right text-nowrap">3.276.500,00</td>
+                                                            <td class="text-right text-nowrap">1.000.000,00</td>
+                                                            <td class="text-right text-nowrap">786.360,00</td>
+                                                            <td class="text-right text-nowrap">213.640,00</td>
+                                                            <td class="text-right text-nowrap">3.490.140,00</td>
+									                    </tr>
+									                    <tr>
+                                                            <td class="text-left text-nowrap">TOTAL</td>
+										                    <td class="text-right text-nowrap">15.006.120,00</td>
+                                                            <td class="text-right text-nowrap">1.800.734,40</td>
+										                    <td class="text-right text-nowrap">450.183,60</td>
+                                                            <td class="text-right text-nowrap">3.001.224,00</td>
+                                                            <td class="text-right text-nowrap">2.250.918,00</td>
+                                                            <td class="text-right text-nowrap">7.503.060,00</td>
+                                                            <td class="text-right text-nowrap">4.500.340,00</td>
+                                                            <td class="text-right text-nowrap">1.800.734,40</td>
+                                                            <td class="text-right text-nowrap">2.699.605,60</td>
+                                                            <td class="text-right text-nowrap">10.202.665,60</td>
+									                    </tr>
+								                    </tbody>
+							                    </table>
+						                    </div>
+					                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            @************************@
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -289,10 +372,13 @@
                                                             <th>Centro de Custo</th>
 										                    <th>Valor (R$)</th>
                                                             <th>Unidade (Qtd)</th>
+                                                            <th>(%)</th>
 										                    <th>Valor (R$)</th>
                                                             <th>Unidade (Qtd)</th>
+                                                            <th>(%)</th>
 										                    <th>Valor (R$)</th>
                                                             <th>Unidade (Qtd)</th>
+                                                            <th>(%)</th>
 									                    </tr>
 								                    </thead>
 								                    <tbody>
@@ -300,28 +386,37 @@
                                                             <td class="text-left text-nowrap"><a href="javascript:void(0)">2.01 - VILA MAR</a></td>
 										                    <td class="text-right text-nowrap">1.400.000,00</td>
                                                             <td class="text-right text-nowrap">3</td>
+                                                            <td class="text-right text-nowrap">73,68</td>
 										                    <td class="text-right text-nowrap">2.400.000,00</td>
                                                             <td class="text-right text-nowrap">9</td>
+                                                            <td class="text-right text-nowrap">72,73</td>
 										                    <td class="text-right text-nowrap">720.000,00</td>
                                                             <td class="text-right text-nowrap">3</td>
+                                                            <td class="text-right text-nowrap">74,22</td>
 									                    </tr>
 									                    <tr>
                                                             <td class="text-left text-nowrap"><a href="javascript:void(0)">2.02 - BARRATIBA</a></td>
 										                    <td class="text-right text-nowrap">  500.000,00</td>
                                                             <td class="text-right text-nowrap">1</td>
+                                                            <td class="text-right text-nowrap">26,32</td>
 										                    <td class="text-right text-nowrap">  900.000,00</td>
                                                             <td class="text-right text-nowrap">4</td>
+                                                            <td class="text-right text-nowrap">27,27</td>
 										                    <td class="text-right text-nowrap">  250.000,00</td>
                                                             <td class="text-right text-nowrap">2</td>
+                                                            <td class="text-right text-nowrap">25,78</td>
 									                    </tr>
 									                    <tr>
                                                             <td class="text-left text-nowrap">TOTAL</td>
 										                    <td class="text-right text-nowrap">1.900.000,00</td>
                                                             <td class="text-right text-nowrap">4</td>
+                                                            <td class="text-right text-nowrap">100,00</td>
 										                    <td class="text-right text-nowrap">3.300.000,00</td>
                                                             <td class="text-right text-nowrap">13</td>
+                                                            <td class="text-right text-nowrap">100,00</td>
 										                    <td class="text-right text-nowrap">970.000,00</td>
                                                             <td class="text-right text-nowrap">5</td>
+                                                            <td class="text-right text-nowrap">100,00</td>
 									                    </tr>
 								                    </tbody>
 							                    </table>
@@ -376,23 +471,6 @@
                                                     </thead>
 								                    <tbody>
 									                    <tr>
-                                                            <td class="text-left text-nowrap">Investimento</td>
-										                    <td class="text-right text-nowrap">258.816,78</td>
-                                                            <td class="text-right text-nowrap">260.916,78</td>
-                                                            <td class="text-right text-nowrap">519.780,10</td>
-                                                            <td class="text-right text-nowrap">349.304,55</td>
-                                                            <td class="text-right text-nowrap">483.396,20</td>
-                                                            <td class="text-right text-nowrap">285.758,73</td>
-                                                            <td class="text-right text-nowrap">288.558,73</td>
-                                                            <td class="text-right text-nowrap">356.304,55</td>
-                                                            <td class="text-right text-nowrap">357.704,55</td>
-                                                            <td class="text-right text-nowrap">359.104,55</td>
-                                                            <td class="text-right text-nowrap">360.504,55</td>
-                                                            <td class="text-right text-nowrap">361.904,55</td>
-                                                            <td class="text-right text-nowrap">4.242.054,60</td>
-                                                            <td class="text-right text-nowrap">70,00</td>
-									                    </tr>
-									                    <tr>
                                                             <td class="text-left text-nowrap">Segurança</td>
 										                    <td class="text-right text-nowrap">18.486,91</td>
                                                             <td class="text-right text-nowrap">18.636,91</td>
@@ -407,7 +485,7 @@
                                                             <td class="text-right text-nowrap">25.750,33</td>
                                                             <td class="text-right text-nowrap">25.850,33</td>
                                                             <td class="text-right text-nowrap">303.003,90</td>
-                                                            <td class="text-right text-nowrap">5,00</td>
+                                                            <td class="text-right text-nowrap">16,67</td>
 									                    </tr>
 									                    <tr>
                                                             <td class="text-left text-nowrap">Juridico</td>
@@ -424,7 +502,7 @@
                                                             <td class="text-right text-nowrap">15.450,20</td>
                                                             <td class="text-right text-nowrap">15.510,20</td>
                                                             <td class="text-right text-nowrap">181.802,34</td>
-                                                            <td class="text-right text-nowrap">3,00</td>
+                                                            <td class="text-right text-nowrap">10,00</td>
 									                    </tr>
 									                    <tr>
                                                             <td class="text-left text-nowrap">Financeiro</td>
@@ -441,7 +519,7 @@
                                                             <td class="text-right text-nowrap">10.300,13</td>
                                                             <td class="text-right text-nowrap">10.340,13</td>
                                                             <td class="text-right text-nowrap">121.201,56</td>
-                                                            <td class="text-right text-nowrap"> 2,00</td>
+                                                            <td class="text-right text-nowrap">6,67</td>
 									                    </tr>
 									                    <tr>
                                                             <td class="text-left text-nowrap">Operacional</td>
@@ -458,7 +536,7 @@
                                                             <td class="text-right text-nowrap">20.600,26</td>
                                                             <td class="text-right text-nowrap">20.680,26</td>
                                                             <td class="text-right text-nowrap">242.403,12</td>
-                                                            <td class="text-right text-nowrap">4,00</td>
+                                                            <td class="text-right text-nowrap">13,33</td>
 									                    </tr>
 									                    <tr>
                                                             <td class="text-left text-nowrap">Despesas</td>
@@ -475,8 +553,80 @@
                                                             <td class="text-right text-nowrap">82.401,04</td>
                                                             <td class="text-right text-nowrap">82.721,04</td>
                                                             <td class="text-right text-nowrap">969.612,48</td>
-                                                            <td class="text-right text-nowrap"> 16,00</td>
+                                                            <td class="text-right text-nowrap">53,33</td>
 									                    </tr>
+									                    <tr>
+                                                            <td class="text-left text-nowrap">Total Despesas</td>
+										                    <td class="text-right text-nowrap">110.921,48</td>
+                                                            <td class="text-right text-nowrap">111.821,48</td>
+                                                            <td class="text-right text-nowrap">222.762,90</td>
+                                                            <td class="text-right text-nowrap">149.701,95</td>
+                                                            <td class="text-right text-nowrap">207.169,80</td>
+                                                            <td class="text-right text-nowrap">122.468,03</td>
+                                                            <td class="text-right text-nowrap">123.668,03</td>
+                                                            <td class="text-right text-nowrap">152.701,95</td>
+                                                            <td class="text-right text-nowrap">153.301,95</td>
+                                                            <td class="text-right text-nowrap">153.901,95</td>
+                                                            <td class="text-right text-nowrap">154.501,95</td>
+                                                            <td class="text-right text-nowrap">155.101,95</td>
+                                                            <td class="text-right text-nowrap">1.818.023,40</td>
+                                                            <td class="text-right text-nowrap">100,00</td>
+									                    </tr>
+
+									                    <tr>
+                                                            <td class="text-left text-nowrap">Investimento Obra</td>
+										                    <td class="text-right text-nowrap">155.290,07</td>
+                                                            <td class="text-right text-nowrap">156.550,07</td>
+                                                            <td class="text-right text-nowrap">311.868,06</td>
+                                                            <td class="text-right text-nowrap">209.582,73</td>
+                                                            <td class="text-right text-nowrap">290.037,72</td>
+                                                            <td class="text-right text-nowrap">171.455,24</td>
+                                                            <td class="text-right text-nowrap">173.135,24</td>
+                                                            <td class="text-right text-nowrap">213.782,73</td>
+                                                            <td class="text-right text-nowrap">214.622,73</td>
+                                                            <td class="text-right text-nowrap">215.462,73</td>
+                                                            <td class="text-right text-nowrap">216.302,73</td>
+                                                            <td class="text-right text-nowrap">217.142,73</td>
+                                                            <td class="text-right text-nowrap">2.545.232,76</td>
+                                                            <td class="text-right text-nowrap">60,00</td>
+									                    </tr>
+
+									                    <tr>
+                                                            <td class="text-left text-nowrap">Investimento Novas Aquisições</td>
+										                    <td class="text-right text-nowrap">103.526,71</td>
+                                                            <td class="text-right text-nowrap">104.366,71</td>
+                                                            <td class="text-right text-nowrap">207.912,04</td>
+                                                            <td class="text-right text-nowrap">139.721,82</td>
+                                                            <td class="text-right text-nowrap">193.358,48</td>
+                                                            <td class="text-right text-nowrap">114.303,49</td>
+                                                            <td class="text-right text-nowrap">115.423,49</td>
+                                                            <td class="text-right text-nowrap">142.521,82</td>
+                                                            <td class="text-right text-nowrap">143.081,82</td>
+                                                            <td class="text-right text-nowrap">143.641,82</td>
+                                                            <td class="text-right text-nowrap">144.201,82</td>
+                                                            <td class="text-right text-nowrap">144.761,82</td>
+                                                            <td class="text-right text-nowrap">1.696.821,84</td>
+                                                            <td class="text-right text-nowrap">40,00</td>
+									                    </tr>
+
+									                    <tr>
+                                                            <td class="text-left text-nowrap">Total Investimento</td>
+										                    <td class="text-right text-nowrap">258.816,78</td>
+                                                            <td class="text-right text-nowrap">260.916,78</td>
+                                                            <td class="text-right text-nowrap">519.780,10</td>
+                                                            <td class="text-right text-nowrap">349.304,55</td>
+                                                            <td class="text-right text-nowrap">483.396,20</td>
+                                                            <td class="text-right text-nowrap">285.758,73</td>
+                                                            <td class="text-right text-nowrap">288.558,73</td>
+                                                            <td class="text-right text-nowrap">356.304,55</td>
+                                                            <td class="text-right text-nowrap">357.704,55</td>
+                                                            <td class="text-right text-nowrap">359.104,55</td>
+                                                            <td class="text-right text-nowrap">360.504,55</td>
+                                                            <td class="text-right text-nowrap">361.904,55</td>
+                                                            <td class="text-right text-nowrap">4.242.054,60</td>
+                                                            <td class="text-right text-nowrap">100,00</td>
+									                    </tr>
+
 									                    <tr>
                                                             <td class="text-left text-nowrap">Total</td>
 										                    <td class="text-right text-nowrap">369.738,25</td>
@@ -492,8 +642,28 @@
                                                             <td class="text-right text-nowrap">515.006,50</td>
                                                             <td class="text-right text-nowrap">517.006,50</td>
                                                             <td class="text-right text-nowrap">6.060.078,00</td>
-                                                            <td class="text-right text-nowrap">100,00</td>
+                                                            <td class="text-right text-nowrap"></td>
 									                    </tr>
+
+									                    <tr>
+                                                            <td class="text-left text-nowrap">Percentual Total</td>
+										                    <td class="text-right text-nowrap">6,10</td>
+                                                            <td class="text-right text-nowrap">6,15</td>
+                                                            <td class="text-right text-nowrap">12,25</td>
+                                                            <td class="text-right text-nowrap">8,23</td>
+                                                            <td class="text-right text-nowrap">11,40</td>
+                                                            <td class="text-right text-nowrap">6,74</td>
+                                                            <td class="text-right text-nowrap">6,80</td>
+                                                            <td class="text-right text-nowrap">8,40</td>
+                                                            <td class="text-right text-nowrap">8,43</td>
+                                                            <td class="text-right text-nowrap">8,47</td>
+                                                            <td class="text-right text-nowrap">8,50</td>
+                                                            <td class="text-right text-nowrap">8,53</td>
+                                                            <td class="text-right text-nowrap">100,00</td>
+                                                            <td class="text-right text-nowrap"></td>
+									                    </tr>
+
+
 
 								                    </tbody>
 
@@ -525,23 +695,6 @@
 									                    </tr>
                                                     </thead>
 								                    <tbody>
-									                    <tr>
-                                                            <td class="text-left text-nowrap">Investimento</td>
-										                    <td class="text-right text-nowrap">539.160,90</td>
-                                                            <td class="text-right text-nowrap">160.907,85</td>
-                                                            <td class="text-right text-nowrap">164.407,85</td>
-                                                            <td class="text-right text-nowrap">307.992,20</td>
-                                                            <td class="text-right text-nowrap">300.992,20</td>
-                                                            <td class="text-right text-nowrap">290.492,20</td>
-                                                            <td class="text-right text-nowrap">293.992,20</td>
-                                                            <td class="text-right text-nowrap">      0,00</td>
-                                                            <td class="text-right text-nowrap">      0,00</td>
-                                                            <td class="text-right text-nowrap">      0,00</td>
-                                                            <td class="text-right text-nowrap">      0,00</td>
-                                                            <td class="text-right text-nowrap">      0,00</td>
-                                                            <td class="text-right text-nowrap">2.057.945,40</td>
-                                                            <td class="text-right text-nowrap"> 70,00</td>
-									                    </tr>
 									                    <tr>
                                                             <td class="text-left text-nowrap">Segurança</td>
 										                    <td class="text-right text-nowrap">38.511,49</td>
@@ -627,6 +780,79 @@
                                                             <td class="text-right text-nowrap">470.387,52</td>
                                                             <td class="text-right text-nowrap">16,00</td>
 									                    </tr>
+
+									                    <tr>
+                                                            <td class="text-left text-nowrap">Total Despesas</td>
+										                    <td class="text-right text-nowrap">231.068,96</td>
+                                                            <td class="text-right text-nowrap">68.960,51</td>
+                                                            <td class="text-right text-nowrap">70.460,51</td>
+                                                            <td class="text-right text-nowrap">131.996,66</td>
+                                                            <td class="text-right text-nowrap">128.996,66</td>
+                                                            <td class="text-right text-nowrap">124.496,66</td>
+                                                            <td class="text-right text-nowrap">125.996,66</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">881.976,60</td>
+                                                            <td class="text-right text-nowrap">100,00</td>
+									                    </tr>
+
+									                    <tr>
+                                                            <td class="text-left text-nowrap">Investimento Obra</td>
+										                    <td class="text-right text-nowrap">323.496,54</td>
+                                                            <td class="text-right text-nowrap">96.544,71</td>
+                                                            <td class="text-right text-nowrap">98.644,71</td>
+                                                            <td class="text-right text-nowrap">184.795,32</td>
+                                                            <td class="text-right text-nowrap">180.595,32</td>
+                                                            <td class="text-right text-nowrap">174.295,32</td>
+                                                            <td class="text-right text-nowrap">176.395,32</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">1.234.767,24</td>
+                                                            <td class="text-right text-nowrap">60,00</td>
+									                    </tr>
+
+									                    <tr>
+                                                            <td class="text-left text-nowrap">Investimento Novas Aquisições</td>
+										                    <td class="text-right text-nowrap">215.664,36</td>
+                                                            <td class="text-right text-nowrap">64.363,14</td>
+                                                            <td class="text-right text-nowrap">65.763,14</td>
+                                                            <td class="text-right text-nowrap">123.196,88</td>
+                                                            <td class="text-right text-nowrap">120.396,88</td>
+                                                            <td class="text-right text-nowrap">116.196,88</td>
+                                                            <td class="text-right text-nowrap">117.596,88</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">823.178,16</td>
+                                                            <td class="text-right text-nowrap">40,00</td>
+									                    </tr>
+
+									                    <tr>
+                                                            <td class="text-left text-nowrap">Total Investimento</td>
+										                    <td class="text-right text-nowrap">539.160,90</td>
+                                                            <td class="text-right text-nowrap">160.907,85</td>
+                                                            <td class="text-right text-nowrap">164.407,85</td>
+                                                            <td class="text-right text-nowrap">307.992,20</td>
+                                                            <td class="text-right text-nowrap">300.992,20</td>
+                                                            <td class="text-right text-nowrap">290.492,20</td>
+                                                            <td class="text-right text-nowrap">293.992,20</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">2.057.945,40</td>
+                                                            <td class="text-right text-nowrap"> 100,00</td>
+									                    </tr>
+
 									                    <tr>
                                                             <td class="text-left text-nowrap">Total</td>
 										                    <td class="text-right text-nowrap">770.229,86</td>
@@ -636,14 +862,33 @@
                                                             <td class="text-right text-nowrap">429.988,86</td>
                                                             <td class="text-right text-nowrap">414.988,86</td>
                                                             <td class="text-right text-nowrap">419.988,86</td>
-                                                            <td class="text-right text-nowrap">         0,00</td>
-                                                            <td class="text-right text-nowrap">         0,00</td>
-                                                            <td class="text-right text-nowrap">         0,00</td>
-                                                            <td class="text-right text-nowrap">         0,00</td>
-                                                            <td class="text-right text-nowrap">         0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
+                                                            <td class="text-right text-nowrap">      0,00</td>
                                                             <td class="text-right text-nowrap">2.939.922,00</td>
-                                                            <td class="text-right text-nowrap">100,00</td>
+                                                            <td class="text-right text-nowrap"></td>
 									                    </tr>
+
+									                    <tr>
+                                                            <td class="text-left text-nowrap">Percentual Total</td>
+										                    <td class="text-right text-nowrap">26,20</td>
+                                                            <td class="text-right text-nowrap">7,82</td>
+                                                            <td class="text-right text-nowrap">7,99</td>
+                                                            <td class="text-right text-nowrap">14,97</td>
+                                                            <td class="text-right text-nowrap">14,63</td>
+                                                            <td class="text-right text-nowrap">14,12</td>
+                                                            <td class="text-right text-nowrap">14,29</td>
+                                                            <td class="text-right text-nowrap"> 0,00</td>
+                                                            <td class="text-right text-nowrap"> 0,00</td>
+                                                            <td class="text-right text-nowrap"> 0,00</td>
+                                                            <td class="text-right text-nowrap"> 0,00</td>
+                                                            <td class="text-right text-nowrap"> 0,00</td>
+                                                            <td class="text-right text-nowrap">100,00</td>
+                                                            <td class="text-right text-nowrap"></td>
+									                    </tr>
+
 
 								                    </tbody>
 
@@ -885,7 +1130,7 @@
     });
 
 
-    function exibeInfoFiltro(codigoCentroCusto,descricaoCentroCusto) {
+    function exibeInfoFiltro(codigoCentroCusto, descricaoCentroCusto) {
         @*var info = "Centro de Custo : " + $("#@Html.IdFor(m => m.CentroCusto.Codigo)").val() + " - " + $("#@Html.IdFor(m => m.CentroCusto.Descricao)").val();*@
         var info = "Centro de Custo : " + codigoCentroCusto + " - " + descricaoCentroCusto;
 
