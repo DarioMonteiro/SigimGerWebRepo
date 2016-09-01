@@ -115,13 +115,13 @@
 									                    <tr>
                                                             <th>Centro de Custo</th>
 										                    <th>VGV - Estoque (R$)</th>
-                                                            <th>Impostos (R$)</th>
-										                    <th>Corretagem (R$)</th>
-                                                            <th>Publicidade (R$)</th>
-                                                            <th>Investimento (R$)</th>
+                                                            <th>Impostos (R$) - 6,80%</th>
+										                    <th>Corretagem (R$) - 5,00%</th>
+                                                            <th>Publicidade (R$) - 10,00%</th>
+                                                            <th>Investimento (R$) - 7,00%</th>
                                                             <th>VGV Estoque Líquido (R$)</th>
                                                             <th>Recebíveis em VPL (R$)</th>
-                                                            <th>Impostos (R$)</th>
+                                                            <th>Impostos (R$) - 6,80%</th>
                                                             <th>Recebíveis Líquido (R$)</th>
                                                             <th>Valor Total (R$)</th>
 									                    </tr>
@@ -364,18 +364,21 @@
 
 									                    <tr>
                                                             <th></th>
-										                    <th class="text-center" colspan="2">Atraso até 60 dias</th>
-										                    <th class="text-center" colspan="2">Atraso mais de 60 dias</th>
-                                                            <th class="text-center" colspan="2">Jurídico</th>
+										                    <th class="text-center" colspan="3">Atraso até 60 dias</th>
+										                    <th class="text-center" colspan="3">Atraso mais de 60 dias</th>
+                                                            <th class="text-center" colspan="3">Jurídico</th>
 									                    </tr>
 									                    <tr>
                                                             <th>Centro de Custo</th>
 										                    <th>Valor (R$)</th>
                                                             <th>Unidade (Qtd)</th>
+                                                            <th>(%)</th>
 										                    <th>Valor (R$)</th>
                                                             <th>Unidade (Qtd)</th>
+                                                            <th>(%)</th>
 										                    <th>Valor (R$)</th>
                                                             <th>Unidade (Qtd)</th>
+                                                            <th>(%)</th>
 									                    </tr>
 								                    </thead>
 								                    <tbody>
@@ -383,28 +386,37 @@
                                                             <td class="text-left text-nowrap"><a href="javascript:void(0)">2.01 - VILA MAR</a></td>
 										                    <td class="text-right text-nowrap">1.400.000,00</td>
                                                             <td class="text-right text-nowrap">3</td>
+                                                            <td class="text-right text-nowrap">73,68</td>
 										                    <td class="text-right text-nowrap">2.400.000,00</td>
                                                             <td class="text-right text-nowrap">9</td>
+                                                            <td class="text-right text-nowrap">72,73</td>
 										                    <td class="text-right text-nowrap">720.000,00</td>
                                                             <td class="text-right text-nowrap">3</td>
+                                                            <td class="text-right text-nowrap">74,22</td>
 									                    </tr>
 									                    <tr>
                                                             <td class="text-left text-nowrap"><a href="javascript:void(0)">2.02 - BARRATIBA</a></td>
 										                    <td class="text-right text-nowrap">  500.000,00</td>
                                                             <td class="text-right text-nowrap">1</td>
+                                                            <td class="text-right text-nowrap">26,32</td>
 										                    <td class="text-right text-nowrap">  900.000,00</td>
                                                             <td class="text-right text-nowrap">4</td>
+                                                            <td class="text-right text-nowrap">27,27</td>
 										                    <td class="text-right text-nowrap">  250.000,00</td>
                                                             <td class="text-right text-nowrap">2</td>
+                                                            <td class="text-right text-nowrap">25,78</td>
 									                    </tr>
 									                    <tr>
                                                             <td class="text-left text-nowrap">TOTAL</td>
 										                    <td class="text-right text-nowrap">1.900.000,00</td>
                                                             <td class="text-right text-nowrap">4</td>
+                                                            <td class="text-right text-nowrap">100,00</td>
 										                    <td class="text-right text-nowrap">3.300.000,00</td>
                                                             <td class="text-right text-nowrap">13</td>
+                                                            <td class="text-right text-nowrap">100,00</td>
 										                    <td class="text-right text-nowrap">970.000,00</td>
                                                             <td class="text-right text-nowrap">5</td>
+                                                            <td class="text-right text-nowrap">100,00</td>
 									                    </tr>
 								                    </tbody>
 							                    </table>
@@ -1118,7 +1130,7 @@
     });
 
 
-    function exibeInfoFiltro(codigoCentroCusto,descricaoCentroCusto) {
+    function exibeInfoFiltro(codigoCentroCusto, descricaoCentroCusto) {
         @*var info = "Centro de Custo : " + $("#@Html.IdFor(m => m.CentroCusto.Codigo)").val() + " - " + $("#@Html.IdFor(m => m.CentroCusto.Descricao)").val();*@
         var info = "Centro de Custo : " + codigoCentroCusto + " - " + descricaoCentroCusto;
 
